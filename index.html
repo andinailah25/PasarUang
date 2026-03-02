@@ -3,78 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog Sederhana Saya</title>
+  <title>Blog Pilihan Saya</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-    }
-    header {
-      background: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background: #444;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      background: #fff;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    article {
-      margin-bottom: 20px;
-    }
-    article h2 {
-      margin-top: 0;
-    }
-    footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 10px;
-      margin-top: 20px;
-    }
+    body { font-family: Arial, sans-serif; background: #f9f9f9; margin: 0; }
+    header, footer { background: #333; color: #fff; text-align: center; padding: 15px; }
+    .container { max-width: 800px; margin: 20px auto; background: #fff; padding: 20px; }
+    article { display: none; margin-bottom: 20px; }
+    article h2 { margin-top: 0; }
+    select { padding: 5px; margin-bottom: 20px; }
+    ul { margin: 10px 0; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Selamat Datang di Blog Saya</h1>
-    <p>Berbagi cerita dan pengalaman</p>
+    <h1>Blog Pilihan Saya</h1>
+    <p>Pilih artikel yang ingin dibaca</p>
   </header>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Tentang</a>
-    <a href="#">Kontak</a>
-  </nav>
-
   <div class="container">
-    <article>
-      <h2>Judul Postingan Pertama</h2>
-      <p>Ini adalah isi dari postingan pertama saya. Di sini saya bisa menulis apa saja, mulai dari pengalaman sehari-hari, tips, atau opini pribadi.</p>
+    <label for="blogSelect">Pilih Blog:</label>
+    <select id="blogSelect">
+      <option value="">-- Pilih --</option>
+      <option value="blog1">Pasar Uang</option>
+      <option value="blog2">Postingan Kedua</option>
+      <option value="blog3">Postingan Ketiga</option>
+    </select>
+
+    <!-- Blog Pertama: Pasar Uang -->
+    <article id="blog1">
+      <h2>Pasar Uang</h2>
+      <h3>Pengertian Pasar Uang</h3>
+      <p>Pasar uang adalah pasar keuangan yang mempertemukan pihak yang membutuhkan dana dengan pihak yang memiliki kelebihan dana untuk transaksi jangka pendek (kurang dari 1 tahun) menggunakan instrumen keuangan tertentu.</p>
+
+      <h3>Tujuan Pasar Uang</h3>
+      <ul>
+        <li>Memenuhi kebutuhan dana jangka pendek.</li>
+        <li>Menjadi sarana investasi sementara.</li>
+        <li>Menjaga kestabilan sistem keuangan.</li>
+        <li>Membantu pengendalian jumlah uang beredar oleh bank sentral.</li>
+      </ul>
+
+      <h3>Pelaku Pasar Uang</h3>
+      <ul>
+        <li>Bank Indonesia (bank sentral)</li>
+        <li>Bank umum</li>
+        <li>Pemerintah</li>
+        <li>Perusahaan</li>
+        <li>Lembaga keuangan non-bank</li>
+        <li>Investor</li>
+      </ul>
+
+      <h3>Instrumen Pasar Uang</h3>
+      <ul>
+        <li>Sertifikat Bank Indonesia (SBI) → surat berharga dari bank sentral.</li>
+        <li>Surat Berharga Pasar Uang (SBPU) → surat utang jangka pendek.</li>
+        <li>Deposito Berjangka → simpanan bank dengan waktu tertentu.</li>
+        <li>Commercial Paper (CP) → surat utang perusahaan jangka pendek.</li>
+        <li>Call Money → pinjaman antarbank sangat singkat.</li>
+        <li>Treasury Bills (T-Bills) → surat utang jangka pendek pemerintah.</li>
+      </ul>
+
+      <h3>Ciri-ciri Pasar Uang</h3>
+      <ul>
+        <li>Jangka waktu kurang dari 1 tahun.</li>
+        <li>Risiko relatif rendah.</li>
+        <li>Likuid (mudah dicairkan).</li>
+        <li>Keuntungan lebih kecil dibanding investasi jangka panjang.</li>
+        <li>Transaksi bernilai besar.</li>
+      </ul>
+
+      <h3>Fungsi Pasar Uang</h3>
+      <ul>
+        <li>✅ Sarana pendanaan jangka pendek</li>
+        <li>✅ Sarana investasi sementara</li>
+        <li>✅ Alat pengendalian kebijakan moneter</li>
+      </ul>
     </article>
 
-    <article>
+    <!-- Blog Kedua -->
+    <article id="blog2">
       <h2>Judul Postingan Kedua</h2>
-      <p>Postingan kedua berisi cerita lain yang ingin saya bagikan. Blog ini akan terus berkembang seiring waktu.</p>
+      <p>Isi dari postingan kedua. Bisa berupa tips atau informasi menarik.</p>
+    </article>
+
+    <!-- Blog Ketiga -->
+    <article id="blog3">
+      <h2>Judul Postingan Ketiga</h2>
+      <p>Isi dari postingan ketiga. Tambahkan konten sesuai keinginanmu.</p>
     </article>
   </div>
 
   <footer>
-    <p>&copy; 2026 Blog Sederhana Saya</p>
+    <p>&copy; 2026 Blog Pilihan Saya</p>
   </footer>
+
+  <script>
+    const select = document.getElementById('blogSelect');
+    const articles = document.querySelectorAll('article');
+
+    select.addEventListener('change', function() {
+      articles.forEach(article => {
+        article.style.display = 'none'; // sembunyikan semua
+      });
+      const chosen = document.getElementById(this.value);
+      if (chosen) {
+        chosen.style.display = 'block'; // tampilkan yang dipilih
+      }
+    });
+  </script>
 </body>
 </html>
